@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply bg-[#164863];
+  }
+  .content-wrapper {
+    @apply w-full h-[calc(100vh-3rem)] px-10 py-5 mb-5 bg-gray-100 rounded-xl;
+  }
+  .header-wrapper {
+    @apply flex justify-between leading-[3rem] bg-[#164863] px-10 sticky top-0 z-50 text-white;
+  }
+  .menu-wrapper {
+    @apply flex gap-10 font-bold;
+  }
+  .menu-nav {
+    @apply hover:underline hover:underline-offset-8;
+  }
+  .menu-nav-active {
+    @apply underline underline-offset-8;
+  }
+}

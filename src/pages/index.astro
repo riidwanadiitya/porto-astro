@@ -1,16 +1,12 @@
 ---
-
+import HomeLayout from "@layouts/HomeLayout.astro";
+import HomeComp from "@components/contents/home/HomeComp.astro";
+import AboutComp from "@components/contents/about/AboutComp.astro";
+import ContactComp from "@components/contents/contact/ContactComp.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<HomeLayout title="Home Page">
+  <HomeComp />
+  <AboutComp />
+  <ContactComp />
+</HomeLayout>
