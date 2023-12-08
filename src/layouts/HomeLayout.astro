@@ -14,7 +14,7 @@ const { title = "Astro" } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <HeaderComp url={Astro.url}/>
+    <HeaderComp url={Astro.url} client:load/>
     <div>
       <slot />
     </div>
