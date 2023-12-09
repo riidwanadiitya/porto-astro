@@ -4,13 +4,13 @@
 
 @layer components {
   body {
-    @apply bg-[#164863];
+    @apply bg-[#2f3e46];
   }
   .content-wrapper {
-    @apply w-full h-[calc(100vh-3rem)] px-10 py-5 mb-5 bg-gray-100 rounded-xl;
+    @apply w-full h-[calc(100vh-3rem)] px-10 py-5 mb-5 bg-transparent rounded-xl text-white;
   }
   .header-wrapper {
-    @apply sm:flex justify-between leading-[3rem] bg-[#164863] px-10 sticky top-0 z-50 text-white;
+    @apply sm:flex justify-between leading-[3rem] bg-[#354f52] px-10 sticky top-0 z-50 text-white;
   }
   .brand-wrapper {
     @apply font-bold ;
