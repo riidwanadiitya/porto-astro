@@ -1,0 +1,37 @@
+---
+import CardComp from '@components/reusable/card/CardComp'
+
+const projectList =[
+    {
+        img:'https://fastly.picsum.photos/id/110/536/354.jpg?hmac=nHzXLPEJ8vgCp_wbTJ83PCGp03JOZ4ILjXmYdVANDHo',
+        title:'Title 1',
+        content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    },
+    {
+        img:'https://fastly.picsum.photos/id/574/536/354.jpg?hmac=tR-H1BlNikxy4fV6npSM86lpUr0HdUGnNG7x1nKQ0nw',
+        title:'Title 2',
+        content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    },
+    {
+        img:'https://fastly.picsum.photos/id/685/536/354.jpg?hmac=Hd6dp2Be-rOnk4Iqn2P0JT4dbWx6ZwdihOS9q9KbXvs',
+        title:'Title 3',
+        content:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    },
+]
+---
+
+<div class="content-wrapper px-[8rem]">
+    <h1 class="text-center text-[36px] mb-5">Project Component</h1>
+    <div class=`flex gap-10 overflow-hidden overflow-x-auto bg-[#354f52] p-5 rounded-md ${projectList.length <= 3? "justify-center" : ""}`>
+        {projectList.map((p,i)=>{
+            return(
+                <div class="w-[15rem] min-w-[15rem] h-[18rem]">
+                    <CardComp client:load image={p.img} title={p.title} content={p.content}/>
+                </div>
+            )
+        })}
+        
+       
+      
+    </div>
+</div>

@@ -3,6 +3,7 @@ const HeaderComp = ({ url }) => {
   const menuList = [
     { url: "/", label: "Home" },
     { url: "/about", label: "About" },
+    { url: "/project", label: "Project" },
     { url: "/contact", label: "Contact" },
   ];
   return (
