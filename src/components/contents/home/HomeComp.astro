@@ -1,7 +1,27 @@
 ---
-
+import illustrasi1 from "@assets/ilustrasi-1.svg";
+import { Image } from "astro:assets";
 ---
 
-<div class="content-wrapper">
-  <h1>Home Component</h1>
+<div class="content-wrapper flex justify-center items-center">
+  <div class="flex">
+    <div class="w-1/2 flex items-center">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </div>
+    <div class="w-1/2">
+      <div class="w-full h-full flex items-center justify-center">
+        <Image src={illustrasi1} alt="illustrasi-1" class="rounded-xl"/>
+      </div>
+    </div>
+  </div>
 </div>
