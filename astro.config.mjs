@@ -5,8 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://riidwanadiitya.github.io",
-  base: "/porto",
+  site: "https://porto.riidwanadiitya.github.io",
   integrations: [
     react({
       experimentalReactChildren: true,
