@@ -7,7 +7,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   server: { port: 3000 },
   site: "https://riidwanadiitya.github.io",
-  base: "/porto",
+  base: "/porto-astro",
   integrations: [
     react({
       experimentalReactChildren: true,
