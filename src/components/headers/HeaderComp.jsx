@@ -1,10 +1,10 @@
 const HeaderComp = ({ url }) => {
   const pathName = url.pathname;
   const menuList = [
-    { url: "/porto", label: "Home" },
-    { url: "/porto/about", label: "About" },
-    { url: "/porto/project", label: "Project" },
-    { url: "/porto/contact", label: "Contact" },
+    { url: "/porto-astro", label: "Home" },
+    { url: "/porto-astro/about", label: "About" },
+    { url: "/porto-astro/project", label: "Project" },
+    { url: "/porto-astro/contact", label: "Contact" },
   ];
   return (
     <div className="header-wrapper">
